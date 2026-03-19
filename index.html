@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tidy. — Support</title>
+
+  <style>
+    :root {
+      --text: #1d1d1f;
+      --subtle: #6e6e73;
+      --background: #f5f5f7;
+      --card: #ffffff;
+      --accent: #0071e3;
+      --border: #e5e5e7;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #ffffff 0%, var(--background) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 18px;
+      color: var(--subtle);
+    }
+
+    section {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--subtle);
+    }
+
+    .actions {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    a.button {
+      text-decoration: none;
+      font-size: 14px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #fff;
+      transition: all 0.2s ease;
+    }
+
+    a.button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    a.button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    .faq-item {
+      margin-bottom: 18px;
+    }
+
+    .faq-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-question {
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: var(--subtle);
+      margin-top: 32px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    
+    <header>
+      <h1>tidy.</h1>
+      <p class="tagline">
+        Tidy helps you review, save, and remove screenshots from your photo library.
+      </p>
+    </header>
+
+    <section>
+      <h2>Support</h2>
+      <p>
+        If you need help using tidy., have questions, or run into an issue, we're here to help.
+      </p>
+
+      <div class="actions">
+        <a class="button primary" href="mailto:support@yourdomain.com">Email Support</a>
+        <a class="button" href="#">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+
+      <div class="faq-item">
+        <div class="faq-question">How does tidy. work?</div>
+        <p>
+          tidy. scans your photo library to identify screenshots, then lets you quickly review, keep, or remove them in a simple, focused experience.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How does screenshot deletion work?</div>
+        <p>
+          When you choose to delete a screenshot, tidy. requests permission and removes it using Apple's standard Photos framework.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Where do deleted screenshots go?</div>
+        <p>
+          Deleted screenshots are moved to the "Recently Deleted" album in the Photos app, where they remain for a period before being permanently removed.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">How can I get help?</div>
+        <p>
+          You can contact support at any time using the email link above. We aim to respond promptly and resolve issues quickly.
+        </p>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">Does tidy. access or store my data?</div>
+        <p>
+          tidy. only accesses your photo library to help you review and manage screenshots you choose. Your photos are never stored, uploaded, or shared.
+        </p>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 tidy. All rights reserved.
+    </footer>
+
+  </main>
+</body>
+</html>
